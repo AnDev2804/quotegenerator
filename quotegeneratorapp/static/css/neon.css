@@ -1,0 +1,46 @@
+@keyframes gradient-border {
+    0% {
+        border-image: linear-gradient(45deg, #ff00ff, #00ffff) 1;
+    }
+    50% {
+        border-image: linear-gradient(45deg, #00ff00, #ff0000) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, #ff00ff, #00ffff) 1;
+    }
+}
+
+body {
+    background-color: #1d1d1d;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cita {
+    font-size: 1.3rem;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #ff00ff, #00ffff) 1;
+    padding: 20px;
+    animation: gradient-border 6s infinite;
+    background-color: #222;
+    border-radius: 15px;
+}
+
+#btn {
+    font-size: 1.1rem;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #ff00ff, #00ffff) 1;
+    padding: 10px 20px;
+    animation: gradient-border 6s infinite;
+    border-radius: 15px;
+    margin-top: 20px; /* Aseguramos que haya espacio entre el botón y la cita */
+}
+
